@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AeolusASP>
+    <Info version="4.14" timestamp="29/12/2021 21:18:55"/>
+    <Model type="aircraft">
+        <UnitSystem type="si10"/>
+        <Wings>
+            <Wing name="main wing" color="0.0 0.5450000166893005 0.8199999928474426">
+                <Geometry origin="0.0 0.0 0.0" epsilon_ref="1.0">
+                    <Settings chordMode="0"/>
+                    <Airfoils>
+                        <Airfoil name="NACA63612" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="0.0" l="0.23" alpha_wt="0.0" phi="0.0" dihedral="0.0" flapchord="0.2" flapdeflection="0.0"/>
+                        <Airfoil name="NACA63612" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="0.8" l="0.23" alpha_wt="0.0" phi="0.0" dihedral="0.0" flapchord="0.2" flapdeflection="0.0"/>
+                        <Airfoil name="NACA63612" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="1.0" l="0.1" alpha_wt="0.0" phi="0.0" dihedral="90.0" flapchord="0.2" flapdeflection="0.0"/>
+                        <Airfoil name="NACA0012" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="1.2" l="0.05" alpha_wt="0.0" phi="0.0" dihedral="45.0" flapchord="0.2" flapdeflection="0.0"/>
+                    </Airfoils>
+                </Geometry>
+                <Discretization npwingstrip="48">
+                    <Strip stripdensity="0.3" type="Constant"/>
+                    <Strip stripdensity="0.3" type="Outboard"/>
+                    <Strip stripdensity="0.3" type="Constant"/>
+                </Discretization>
+            </Wing>
+            <Wing name="Stabiliser" color="0.7622497081756592 0.9041382074356079 0.4490394592285156">
+                <Geometry origin="1.0 0.0 0.25" epsilon_ref="1.0">
+                    <Settings chordMode="1"/>
+                    <Airfoils>
+                        <Airfoil name="NACA0012" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="0.0" l="0.12" alpha_wt="0.0" phi="0.0" dihedral="-30.0" flapchord="0.2" flapdeflection="0.0"/>
+                        <Airfoil name="NACA0012" refinement="0.9" refinementSourceTop="0.6" refinementSourceBot="0.6" s="0.55" l="0.12" alpha_wt="0.0" phi="0.0" dihedral="0.0" flapchord="0.2" flapdeflection="0.0"/>
+                    </Airfoils>
+                </Geometry>
+                <Discretization npwingstrip="48">
+                    <Strip stripdensity="0.3" type="Constant"/>
+                </Discretization>
+            </Wing>
+        </Wings>
+        <Propulsion>
+            <Propeller name="forward props" base="-0.4 0.5 0.0" angle="0.0" diameter="0.38" thrust="24.0" color="1.0 1.0 1.0" pusher="false"/>
+            <Propeller name="rear prop" base="0.3 0.0 0.0" angle="0.0" diameter="0.38" thrust="24.0" color="1.0 1.0 1.0" pusher="true"/>
+        </Propulsion>
+        <FlightCondition aircraftWeight="74.0" fluid="air" altitude="200.0" temperature="22.0" trueSpeed="30.0" cdviscwet="0.005"/>
+        <Computation symmetry="true" numberOfCores="4" aoa="-3.0 5.0 10.0 " nsubpanels="15" normalizedzetaoffset="0.005" wakelength="1000.0" normalizedfarfield="5.0"/>
+        <Optimization enabled="false">
+            <GoalType goalType="maximize"/>
+            <ObjectiveFunction objective="currentE"/>
+            <Optimizer algorithm="BOBYQA" maxEvaluations="1000"/>
+        </Optimization>
+        <ParamaterStudies enabled="false" nsteps="20">
+            <ObjectiveFunction objective="currentE"/>
+        </ParamaterStudies>
+    </Model>
+</AeolusASP>
