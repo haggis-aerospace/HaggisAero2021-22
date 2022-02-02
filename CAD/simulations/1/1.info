@@ -1,0 +1,116 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2021 SP3.0. Build: 5251
+                Computer name:   DESKTOP-9BAP4BE
+                User name:   deleteme
+                Processors:   Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+                Memory:   16271 MB / 4722 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19042)
+                CAD version:   SOLIDWORKS 2021 SP3.0
+                CPU speed:   2801 MHz
+
+    General Info
+                Model:   drag estimate.SLDPRT
+                Project name:   drag estimate
+                Project path:   C:\Users\zarec\Documents\HaggisAero2021-22\CAD\simulations\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (exclude internal spaces)
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global Coordinate System
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -0.599 m
+                X max:   0.609 m
+                Y min:   -0.571 m
+                Y max:   0.647 m
+                Z min:   -1.043 m
+                Z max:   1.050 m
+                X size:   1.208 m
+                Y size:   1.218 m
+                Z size:   2.092 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   32
+                Number of cells in Y:   32
+                Number of cells in Z:   56
+
+        Number Of Cells
+                Cells:   57035
+                Fluid cells:   57035
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   1
+
+    Goals
+
+        Global Goals
+
+            GG Average Velocity 1
+                Type:   Global Goal
+                Goal type:   Velocity
+                Calculate:   Average value
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            GG Force 2
+                Type:   Global Goal
+                Goal type:   Force
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            GG Force (Y) 3
+                Type:   Global Goal
+                Goal type:   Force (Y)
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            GG Force (Z) 4
+                Type:   Global Goal
+                Goal type:   Force (Z)
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+    Goals
+                
+                Name                    	Unit   	Value    	Progress   	Criteria         	Delta            	Use in convergence 
+                GG Average Velocity 1   	m/s    	30.021   	100        	0.000947286185   	0.000591867218   	On                 
+                GG Force 2              	N      	8.761    	100        	0.144735576      	0.107386742      	On                 
+                GG Force (Y) 3          	N      	-7.046   	100        	0.109351819      	0.0993453413     	On                 
+                GG Force (Z) 4          	N      	-5.207   	100        	0.0948223427     	0.0462679746     	On                 
+
+    General Info
+                Run at:   DESKTOP-9BAP4BE
+                Number of cores:   8
+                Iterations:   115
+                CPU time:   46 s
+
+        Log
+                Mesh generation started	0:   16:18:03 , Feb 02
+                Mesh generation normally finished	0:   16:18:04 , Feb 02
+                Preparing data for calculation	0:   16:18:04 , Feb 02
+                Calculation started	0:   16:18:06 , Feb 02
+                Calculation has converged since the following criteria are satisfied:	115:   16:18:51 , Feb 02
+                    Goals are converged	115:   
+                Calculation finished	115:   16:18:52 , Feb 02

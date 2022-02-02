@@ -1,0 +1,7 @@
+2022-Feb-02 16:18:51
+Computer name:	DESKTOP-9BAP4BE
+Number of cores used in calculation:	8
+Configuration name:	Default
+Project name:	drag estimate
+
+Warnings on last iteration: 
