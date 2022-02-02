@@ -1,0 +1,109 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2021 SP3.0. Build: 5251
+                Computer name:   DESKTOP-9BAP4BE
+                User name:   deleteme
+                Processors:   Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+                Memory:   16271 MB / 7522 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19042)
+                CAD version:   SOLIDWORKS 2021 SP3.0
+                CPU speed:   2801 MHz
+
+    General Info
+                Model:   fuselage shell.SLDPRT
+                Project name:   fuselage flow analysis
+                Project path:   C:\Users\zarec\Documents\HaggisAero2021-22\CAD\Fuselage\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (not exclude internal spaces)
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global Coordinate System
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   5.0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -1.047 m
+                X max:   1.487 m
+                Y min:   -0.740 m
+                Y max:   0.804 m
+                Z min:   -0.765 m
+                Z max:   0.758 m
+                X size:   2.534 m
+                Y size:   1.543 m
+                Z size:   1.523 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   55
+                Number of cells in Y:   32
+                Number of cells in Z:   32
+
+        Number Of Cells
+                Cells:   56160
+                Fluid cells:   56160
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   1
+
+    Goals
+
+        Global Goals
+
+            GG Average Velocity (X) 1
+                Type:   Global Goal
+                Goal type:   Velocity (X)
+                Calculate:   Average value
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            GG Force (X) 2
+                Type:   Global Goal
+                Goal type:   Force (X)
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            GG Force (Y) 3
+                Type:   Global Goal
+                Goal type:   Force (Y)
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+    Goals
+                
+                Name                        	Unit   	Value    	Progress   	Criteria        	Delta            	Use in convergence 
+                GG Average Velocity (X) 1   	m/s    	26.030   	100        	0.00101962045   	0.000976363637   	On                 
+                GG Force (X) 2              	N      	2.001    	100        	0.113363539     	0.0622794732     	On                 
+                GG Force (Y) 3              	N      	-2.602   	100        	0.0607941212    	0.0404469413     	On                 
+
+    General Info
+                Run at:   DESKTOP-9BAP4BE
+                Number of cores:   8
+                Iterations:   79
+                CPU time:   29 s
+
+        Log
+                Mesh generation started	0:   19:06:56 , Feb 02
+                Mesh generation normally finished	0:   19:07:00 , Feb 02
+                Preparing data for calculation	0:   19:07:00 , Feb 02
+                Calculation started	0:   19:07:02 , Feb 02
+                Calculation has converged since the following criteria are satisfied:	79:   19:07:31 , Feb 02
+                    Goals are converged	79:   
+                Calculation finished	79:   19:07:32 , Feb 02
